@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root{
+  --violet-color: hsl(257, 40%, 49%);
+  --magenta-color: hsl(300, 69%, 71%);
+}
+
+body{
+  background-color: var(--violet-color);
+  background-image: url("./images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1440px;
+}
+
+header{
+  margin-top: 60px;
+  padding: 0 70px;
+}
+
+.container{
+  max-width: 1440px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 100px auto 10px;
+}
+
+.img__container img{
+  width: 100%;
+}
+
+.text__container{
+  width: 40%;
+  color: #fff;
+}
+
+.text__container h1{
+  font-family: 'Poppins', sans-serif;
+}
+
+.text__container a{
+  display: inline-block;
+  background: #fff;
+  padding: 15px 60px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: var(--violet-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 400;
+  margin-top: 20px;
+  box-shadow: 3px 3px 20px 3px rgba(0, 0, 0, 0.3) ;
+}
+
+.text__container a:hover{
+  background: var(--magenta-color);
+  color: #fff;
+}
+
+.social{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 90px;
+}
+
+.icon__container{
+  margin-left: 20px;
+}
+
+.icon{
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.icon i{
+  margin-top: 8px;
+}
+
+.icon:hover{
+  color: var(--magenta-color);
+  border: 1px solid var(--magenta-color);
+}
+
+.attribution{
+  margin-top: 50px;
+  font-size: 11px; text-align: center;
+ }
+
+.attribution a{
+  color: var(--magenta-color);
+}
+
+
+/* Breakpoints */
+
+@media only screen and (max-width: 1350px) {
+
+  .text__container{
+    width: 30%;
+  }
+
+  .img__container{
+    width: 65%;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+  body{
+    background-image: url("./images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  header{
+    padding: 0;
+  }
+
+  .logo img{
+    width: 50%;
+  }
+
+  .img__container{
+    width: 100%;
+    text-align: center;
+  }
+
+  .text__container{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+  }
+
+  .text__container a{
+    padding: auto 30px;
+  }
+
+  .social{
+    justify-content: center;
+    margin-right: 0;
+  }
+
+}
